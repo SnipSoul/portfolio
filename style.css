@@ -1,0 +1,99 @@
+body {
+    background-color: #BABFD1;
+    font-family: 'Jost';
+}
+.customcontainer {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 10px 10px 10px;
+    margin: 15px;
+    border-radius: 10px;
+    /* box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.7); */
+}
+
+p{
+    text-align: justify;
+}
+.techlogo{
+    height: 65px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid rgb(151, 151, 151);
+    margin-top: 5px;
+    object-position: center;
+}
+.techlogo:hover{
+    border: 2px solid rgb(0, 0, 0);
+}
+.imgback{
+    background-image: url("dgdfdfg.jpg");
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    
+}
+
+.whitecover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.projectcard{
+    height: 400px;
+    width: 350px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5%;
+    padding: 10px;
+}
+.projectcard-img{
+    height: 175px;
+    width: 325px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.projectcard-title{
+    font-size: x-large;
+    text-align: center;
+}
+
+
+/* .projectcard:hover{
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+} */
+.hovereff:hover{
+    border: 2px solid rgb(127, 127, 127);
+    cursor: pointer;
+}
+.customlist{
+    border: 1px solid rgb(127, 127, 127);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.logo{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+.back-to-top {
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #737373;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-top:hover {
+    background-color: #616161;
+}

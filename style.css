@@ -1,16 +1,23 @@
 body {
-    background-color: #BABFD1;
+    background-color: #e1e5e8;
     font-family: 'Jost';
 }
-.customcontainer {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 10px 10px 10px 10px;
-    margin: 15px;
-    border-radius: 10px;
-    /* box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(0, 0, 0, 0.7); */
+.myquote{
+    color: #53575c ;
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
-
+@media (max-width: 768px) {
+    .display-2{
+        font-size: 60px;
+    }
+    .myquote{
+        color: #000000 ;
+        font-size: 25px;
+        text-align: start;
+        margin-top: 1rem;
+    }
+}
 p{
     text-align: justify;
 }
@@ -22,6 +29,14 @@ p{
     border: 2px solid rgb(151, 151, 151);
     margin-top: 5px;
     object-position: center;
+}
+@media (max-width: 768px) {
+    .techlogo {
+        height: 50px; /* Reduce height for smaller screens */
+        width: 140px; /* Reduce width for smaller screens */
+        margin-top: 10px; /* Increase margin for better spacing */
+        border-radius: 15px; /* Slightly smaller border radius */
+    }
 }
 .techlogo:hover{
     border: 2px solid rgb(0, 0, 0);
@@ -35,42 +50,76 @@ p{
     width: 100%; /* Full width */
     
 }
-
+@media (max-width: 768px) {
+    .imgback {
+        background-size: cover; /* Adjust to fit the image without cutting it */
+        background-image: url("mobileback.jpg");
+        height: auto; /* Allow height to adjust based on content */
+        min-height: 50vh; /* Set a minimum height for smaller screens */
+    }
+    .whitecover{
+        background-color: rgba(255, 255, 255, 0.4);
+        height: 50vh;
+    }
+}
 .whitecover{
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 100vh;
 }
 .projectcard{
     height: 400px;
     width: 350px;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 5%;
+    border: 2px solid rgb(135, 134, 134);
+    border-radius: 7px;
     padding: 10px;
+    margin: 15px;
 }
 .projectcard-img{
     height: 175px;
     width: 325px;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 10px;
+    border: 2px solid rgb(133, 133, 133);
+    border-radius: 7px;
 }
 .projectcard-title{
     font-size: x-large;
     text-align: center;
+    margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+    .projectcard {
+        height: auto; /* Let the height adjust automatically */
+        width: 90%; /* Make it responsive to smaller screens */
+        margin: 10px auto; /* Center the card horizontally */
+    }
+
+    .projectcard-img {
+        height: 150px; /* Slightly smaller image height for mobile */
+        width: 100%; /* Make image width match the card width */
+    }
+
+    .projectcard-title {
+        font-size: medium; /* Reduce font size for better readability */
+    }
 }
 
 
-/* .projectcard:hover{
+
+
+
+.projectcard:hover{
     border: 2px solid rgb(0, 0, 0);
-    cursor: pointer;
-} */
-.hovereff:hover{
-    border: 2px solid rgb(127, 127, 127);
+    /* background-color: #dfdfdf; */
     cursor: pointer;
 }
+
 .customlist{
     border: 1px solid rgb(127, 127, 127);
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
+}
+.customlist:hover{
+    border: 1px solid black;
 }
 .logo{
     height: 45px;

@@ -52,7 +52,7 @@ p{
     border-radius: 10px;
 }
 .imgback{
-    background-image: url("dgdfdfg2.jpg");
+    background-image: url("dgdfdfg.jpg");
     background-size: cover; /* Ensures the image covers the entire area */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */

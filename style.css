@@ -1,0 +1,498 @@
+
+body {
+    background-color: #dae0ed;
+    /* background: linear-gradient(90deg, #cbcdcf 0%, #e2ebf0 100%); */
+    font-family: 'Jost', 'Gill Sans';
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.img-back{
+    background-image: url("back.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    /* opacity: 0.5; */
+}
+.name-container{
+    margin: auto;
+    display: flex;
+}
+.row-custom{
+    margin-left: 75px;
+    margin-right: 75px;
+}
+.col-custom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.namecontainer{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 1500px; 
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.myname{
+    font-size: 100px;
+    font-weight: 300 !important;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: start;
+}
+.mytagline{
+    color: #53575c ;
+    font-size: 24px;
+    /* margin-top: 1rem; */
+}
+@media (max-width: 1600px) {
+    .myname{
+        font-size: 75px;
+    }
+    .mytagline{
+        font-size: 18px;
+    }
+}
+
+.myquote{
+    font-style: italic;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+.techlogo{
+    height: 40px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid rgb(151, 151, 151);
+    margin-top: 5px;
+    object-position: center;
+    transition: border-radius 0.3s ease;
+}
+
+.techlogo:hover{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.imgback{
+    background-image: url("Home\(6\).png");
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+}
+
+.whitecover{
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 100vh;
+}
+.projectsection{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.projectcard{
+    position: relative;
+    height: 365px;
+    width: 350px;
+    background: #fff;
+    border-radius: 8px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+.projectcard:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        .projectcard-img{
+            border-bottom: 1px solid rgb(171, 171, 171);
+        }
+        .card-icon{
+            opacity: 1;
+        }
+}
+
+
+.projectcard-img{
+    height: 175px;
+    width: 100%;
+    /* border: 1px solid rgb(133, 133, 133); */
+    border-bottom: 1px solid transparent;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+    transition: all 0.7s ease;
+}
+
+.projectcard-dis{
+    text-align: justify;
+    padding: 10px 15px;
+}
+.techbadge-section{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    padding: 15px;
+}
+.projectcard-title{
+    text-align: center;
+    font-weight: bold;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.back-to-top {
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #737373;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-top:hover {
+    background-color: #616161;
+}
+
+.cusrow{
+    display: flex;
+}
+
+.text-bg-red {
+    background-color: #eda0a2 !important; /* Dark background */
+    color: #000000 !important; /* White text */
+}
+.text-bg-yellow {
+    background-color: #eddca0 !important; /* Dark background */
+    color: #000000 !important; /* White text */
+}
+.text-bg-blue {
+    background-color: #a0c3ed !important; /* Dark background */
+    color: #000000 !important; /* White text */
+}
+.text-bg-green {
+    background-color: #a0eda8 !important; /* Dark background */
+    color: #000000 !important; /* White text */
+}
+
+.skill-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+.footquote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footquote p{
+    text-align: center;
+}
+.sectiontitle{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+    margin: 15px 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+hr{
+    margin-bottom: 0;
+}
+.section{
+    width: 100%;
+    /* padding-bottom: 20px; */
+    min-height: 80vh;
+    /* align-content: center; */
+    display: flex;
+    flex-direction: column;
+}
+.seccontainer{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.footer-section{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+}
+
+.wrap-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+}
+
+.skill-list{
+    display: flex;
+    height: min-content;
+    text-align: center;
+    border: 2px solid rgb(186, 186, 186);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    color: #000000;
+}
+.skill-list:hover{
+    border: 2px solid rgb(101, 101, 101);
+}
+.skill-list svg {
+    opacity: 1;
+    height: 24px;
+    width: 25px;
+    margin-right: 7px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.customlist {
+    display: flex;
+    height: min-content;
+    text-align: center;
+    border: 2px solid rgb(186, 186, 186);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    color: #000000;
+}
+
+.customlist:hover {
+    border: 2px solid rgb(101, 101, 101);
+    color: #616161;
+}
+
+.customlist svg {
+    opacity: 0;
+    height: 24px;
+    width: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    background-image: url('view-svgrepo-com.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.customlist:hover svg {
+    margin-left: 10px;
+    width: 25px;
+    opacity: 1; /* Make the SVG visible */
+}
+
+.aboutmedis{
+    font-size: 18px;
+    text-align: justify;
+}
+.card-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 50% 0 0 50%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #9c9ea4;
+    background-image: url('link-svgrepo-com.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card-icon:hover{
+    background-color: rgba(102, 102, 102);
+}
+@media (max-width: 768px) {
+    .section{
+        height: auto;
+    }
+    .card-icon{
+        opacity: 1;
+    }
+    .imgback {
+        background-size: cover; /* Adjust to fit the image without cutting it */
+        background-image: url("mobileback.jpg");
+        height: auto; /* Allow height to adjust based on content */
+        min-height: 100vh; /* Set a minimum height for smaller screens */
+    }
+    .whitecover{
+        background-color: rgba(255, 255, 255, 0.4);
+        height: 100vh;
+    }
+    .namecontainer{
+        margin-top: 200px;
+    }
+    .myname{
+        font-size: 60px;
+        line-height: 70px;
+        
+    }
+    .mytagline{
+        color: #000000;
+        font-size: 16px;
+        
+    }
+    .sectiontitle{
+        font-size: 35px;
+    }
+    .sectionsubtitle{
+        align-items: center;
+        text-align: center;
+    }
+    .projectcard {
+        height:365px; /* Let the height adjust automatically */
+        width: auto; /* Make it responsive to smaller screens */
+        margin: 10px 10%; /* Center the card horizontally */
+        font-size: 11px;
+    }
+    .projectcard-img {
+        height: 150px; /* Slightly smaller image height for mobile */
+        width: 100%; /* Make image width match the card width */
+    }
+
+    .techlogo {
+        height: 50px; /* Reduce height for smaller screens */
+        width: 140px; /* Reduce width for smaller screens */
+        margin-top: 10px; /* Increase margin for better spacing */
+        border-radius: 15px; /* Slightly smaller border radius */
+        
+    }
+    .aboutmedis{
+        font-size: 14px;
+    }
+    .myquote{
+        font-size: 16px;
+    }
+    .customlist{
+        font-size: 12px;
+    }
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #7e8085;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    padding: 10px;
+}
+
+.scroll-to-top:hover {
+    background-color: rgba(102, 102, 102, 0.9);
+}
+
+/* Visible state for the scroll button */
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.resumedownload{
+    text-decoration: none;
+    width: 150px;
+    height: 45px;
+    background-color: #7e8085;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    color: white;
+    font-size: 19px;
+    transition: all 0.3s ease;
+}
+.resumedownload svg{
+    width: 0;
+    height: 30px;
+    margin-left: 0;
+    transition: all 0.3s ease;
+}
+.resumedownload:hover{
+    background-color: rgba(102, 102, 102);
+    svg{
+        width: 30px;
+        margin-left: 15px;
+    }
+}
+.sociallinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sociallinks a{
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    background-color: #7e8085;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 7px;
+    margin-right: 7px;
+    transition: background-color 0.3s ease;
+}
+.sociallinks a:hover{
+    background-color: rgba(102, 102, 102);
+}
